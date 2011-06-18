@@ -1,0 +1,401 @@
+/*//// SCREEN ////*/
+
+/* global */
+
+html,body {
+	background: #83b2ce url(../img/bg.png) top left repeat-x;
+	font-family: arial, 'Helvetica', sans-serif;
+	min-height: 100%;
+}
+	h1,h2,
+	h3,h4,
+	h5,h6 {
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	a {
+		color: #ec9740;
+		text-decoration: underline;
+	}
+	a:hover { text-decoration: none; }
+	
+	#container {
+		width: 960px;
+		margin: 0 auto;
+	}
+
+/* header */
+
+		#header {
+			display: block;
+			height: 162px;
+			position: relative;
+		}
+		
+			#logo {
+				background: transparent url(../img/logo.png) bottom left no-repeat;
+				height: 118px;
+				left: 15px;
+				position: absolute;
+				text-indent: -99999px;
+				top: 25px;
+				width: 303px;
+			}
+			#logo:hover {
+				background: transparent url(../img/logo.png) top left no-repeat;
+				cursor: pointer;
+			}
+		
+			#header input[type=text],
+			#header input[type=password] {
+				background: #e9eaed;
+				color: #000;
+				font-size: 12px;
+				padding: 1px 2px 3px;
+				margin-top: 2px;
+				border: 1px solid #000;
+				width: 136px;
+			}
+			#header input[type=text]:hover,
+			#header input[type=password]:hover,
+			#header input[type=text]:focus,
+			#header input[type=password]:focus {
+				background: #f9fafd;
+			}
+			#header input.submit,
+			#header button {
+				background: transparent;
+				border: none;
+				color: #fff;
+				font-size: 10px;
+				font-weight: bold;					
+				margin: 0;
+				padding: 0;
+				position: relative;
+				text-transform: uppercase;
+				top: -4px;
+			}
+				#header input.submit:hover,
+				#header button:hover {
+					color: #e79540;
+					cursor: pointer;
+				}
+
+/* nav */
+			
+			#nav {
+				left: 345px;
+				position: absolute;
+				top: 0;
+			}
+				#nav ul { list-style: none; }
+					#nav ul li { float: left; }
+						#nav ul li a {
+							background: transparent;
+							color: #fff;
+							display: block;
+							font-size: 16px;
+							font-weight: 500;
+							margin-right: 3px;
+							padding: 75px 15px 30px;
+							text-decoration: none;
+							text-transform: uppercase;
+							
+							-webkit-border-radius: 0 0 8px 8px;
+							-moz-border-radius: 0 0 8px 8px;
+							border-radius: 0 0 8px 8px;
+						}
+						#nav ul li a:hover,
+						#nav ul li a.selected,
+						#nav ul li a:hover.selected {
+							color: #fff;
+							background: #283353;
+						}
+						#nav ul li a:hover {
+							color: #e79540;
+						}
+
+/* login */
+			
+			#login {
+				background: #283353;
+				padding: 8px 8px 2px;
+				position: absolute;
+				right: 7px;
+				text-align: right;
+				top: 12px;
+				width: 141px;
+				
+				-webkit-border-radius: 8px;
+				-moz-border-radius: 8px;
+				border-radius: 8px;
+			}
+				#login h3 {
+					color: #cd8743; /* was e79540 */
+					font-size: 14px;
+					text-align: left;
+				}
+				#login input[type=password] { margin-bottom: 5px; }
+				#login button { color: #8b8d96; }
+
+/* search */				
+
+			#search {
+				position: absolute;
+				bottom: 0;
+				right: 15px;
+				text-align: right;
+				width: 141px;
+			}
+
+/* content defaults */
+
+		#content-wrapper {
+			background: #fff;
+			min-height: 420px;
+			overflow: hidden;
+		}
+			#content {
+				margin: 15px;
+			}
+				#content h2 {
+					background: #283353;
+					color: #fff;
+					font-size: 21px;
+					padding: 9px 13px 8px;
+					text-transform: none;
+					
+					-webkit-border-radius: 8px 8px 0 0;
+					-moz-border-radius: 8px 8px 0 0;
+					border-radius: 8px 8px 0 0;
+				}
+				#content p {
+					float: left;
+					font-size: 13px;
+					padding: 25px 15px 15px;
+					width: 300px;
+				}
+
+/* footer defaults */
+
+		#footer {
+			color: #fff;
+			background: #6C9889;
+			font-size: 12px;
+			min-height: 100px;
+			overflow: hidden;
+		}
+			#footer table { width: 100%; }
+				#footer td {
+					display: table-cell;
+					padding: 23px 15px 5px 18px;
+				}
+					#footer td h3 {
+						color: #fff;
+						font-size: 16px;
+						margin-bottom: 15px;
+					}
+			
+			#footer td.divider {
+				background: transparent url(../img/divider.png) 6px 15px no-repeat;
+				height: 172px;
+				padding: 10px 15px;
+				width: 3px;
+			}
+
+/* about ppcug links:
+
+	As I recall, most if not all of these were in the members section only.
+	Might want to reconsider their placement in the current build.
+	-nate
+	
+*/
+
+			#about {
+				/* placeholder */
+			}
+				#about ul {
+					line-height: 1.8;
+					list-style: none;
+					margin: 10px 0 10px 10px;
+					overflow: hidden;
+				}
+				#about ul li a {
+					background: url(../img/footer_chevron.png) left 5px no-repeat;
+					color: #fff;
+					padding-left: 12px;
+					text-decoration: none;
+				}
+					#about ul li a:hover { text-decoration: underline; }
+
+/* props 2 the homies */
+
+			#thanks {
+				/* placeholder */
+			}
+				#thanks .group {
+					overflow: hidden;
+				}
+					#thanks .group .icon {
+						color: #fff;
+						display: block;
+						float: left;
+						font-size: 11px;
+						line-height: 1.1;
+						margin: 0 20px 15px 0;
+						text-align: center;
+						text-decoration: none;
+					}
+						#thanks .group .icon img {
+							margin-bottom: 5px;
+						}
+						#thanks .group .icon:hover p {
+							text-decoration: underline;
+						}
+			
+/* location / map */
+			
+			#location {
+				width: 320px;
+			}
+				#location .map {
+					border: 1px solid #235;
+					float: right;
+					overflow: hidden;
+					width: 125px;
+					
+					-webkit-opacity: .9;
+					-moz-opacity: .9;
+					-o-opacity: .9;
+					opacity: .9;
+				}
+					#location .map:hover {
+						border: 1px solid #57a;
+						
+						-webkit-opacity: 1;
+						-moz-opacity: 1;
+						-o-opacity: 1;
+						opacity: 1;
+					}
+					#location address {
+						font-size: 13px;
+						font-style: normal;
+						line-height: 1.4;
+						/* white-space: pre; */
+					}
+
+/* footer nav & copyright */
+
+		#footer_nav {
+			color: #fff;
+			font-size: 12px;
+			margin: 28px 0 23px;
+			text-align: center;
+		}
+				#footer_nav a {
+					color: #fff;
+					text-decoration: none;
+				}
+					#footer_nav a:hover {
+						color: #283353;
+						text-decoration: underline;
+					}
+		
+		#copyright {
+			color: #384363;
+			font-size: 10px;
+			padding-bottom: 8px;
+			text-align: center;
+		}
+
+/* public */
+	#content.home {
+		float: left;
+		width: 660px;
+	}
+		#content.home #slideshow img {
+			width: 660px;
+		}
+	
+	#sidebar {
+		background: #283353;
+		color: #fff;
+		float: right;
+		font-size: 12px;
+		width: 230px;
+		padding: 15px 10px 10px;
+		margin: 15px 15px 15px 0;
+	}
+		#sidebar h3 {
+			color: #e79540;
+			font-size: 13px;
+			margin-bottom: 13px;
+		}
+		#sidebar #announcements {
+			min-height: 200px;
+		}
+			#sidebar #announcements p {
+				line-height: 1.3;
+				padding: 2px 0 10px;
+			}
+		
+		#sidebar #extras { font-size: 11px; }
+			#sidebar #extras .group {
+				background: transparent url(../img/extras_bg.png) top left repeat-y;
+				padding: 18px 5px 18px 15px;
+				margin-top: 3px;
+			}
+				#sidebar #extras .group p {
+					width: 125px;
+					margin-bottom: 15px;
+				}
+				#sidebar #extras .group img {
+					float: right;
+				}
+
+/* members */
+	
+	#container.member  {
+		width: 960px;
+		margin: 0 auto;
+	}	
+	
+	.member #login {
+		text-align: left;
+	}
+	.member #login .logged-in {
+		text-align:left;
+		padding:10px 0 15px 0;
+		font-size:12px;
+		color:#FFF;
+	}
+		.member #login .username {
+			color:#e79540;
+		}
+	.member #login input[type=submit] { float: left; }
+	.member #login button.renew { float: right; }
+	
+
+/*
+VIOLENTLY STRONG SUGGESTION: for member content styling, if a member.css conditional stylesheet is not an option, just add a .member class to the container:
+
+	<div id="container" class="member">
+
+ All public content can just be default without a specific identifier -- a .member prefix will override the default. So you could style a member element like so:
+ 
+	.member #content { property: value; }
+
+kthx
+-nate
+*/
+
+/*
+I completely agree with the .members being added to a new #container. I think we agreed it would be easier just to point to one css file. So I created a new #container with .member as a class. 
+
+I updated the following:
+	* Added target="_blank" to the links in the footer on both the home and members templates. 
+	* Added new CSS for the member area.
+	* Create an index.html page for members home page. 
+	
+-jd
+*/

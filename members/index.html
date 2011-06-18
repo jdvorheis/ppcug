@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="title" content="PPCUG | Portland PC Users Group">
+	<meta name="description" content="Home of the Portland PC Users Group - an Oregon non-profit organization.">
+	
+	<title>PPCUG | Portland PC Users Group</title>
+	
+	<link rel="icon" href="../favicon.ico" />
+	<link rel="image_src" href="#" /><!-- facebook link image -->
+	<link rel="stylesheet" href="../css/reset.css" />
+	<link rel="stylesheet" href="../css/screen.css" />
+</head>
+<body>
+
+	<div id="container" class="member">
+
+		<div id="header">
+
+			<a href="index.html">
+
+				<h1 id="logo">Portland PC Users Group</h1>
+
+			</a>
+
+			<!-- SWAP PUBLIC/MEMBER NAV -->
+			<div id="nav">
+
+				<ul>
+					<li><a href="index.html" class="selected">home</a></li>
+					<li><a href="#">sigs</a></li>
+					<li><a href="#">contact</a></li>
+					<li><a href="#">pc-grapevine</a></li>
+				</ul>
+
+			</div>
+
+			<!-- MEMBER MODULE -->
+			<div id="login">
+
+				<h3>Logged In</h3>
+				
+					<form action="../index.html">
+						<p class="logged-in">You are logged in as: <br/><span class="username">User Name</span></p>
+						<input type="submit" value="logout" class="submit" />
+						<button class="renew">Renew</button>
+					</form>
+
+			</div>
+
+			<!-- SEARCH -->
+			<div id="search">
+
+				<form action="search.html">
+					<input type="text" /><br/>
+					<input type="submit" value="search" class="submit" />
+				</form>
+
+			</div>
+
+		</div>
+
+		<div id="content-wrapper">
+
+			<!-- PAGE-SPECIFIC CONTENT -->
+			<div id="content">
+				
+				<h2>Members Area</h2>
+				
+				<p>Content coming soon!</p>
+
+			</div>
+
+		</div>
+
+		<!-- SWAP PUBLIC/MEMBER FOOTER -->
+		<div id="footer">
+			<table><!-- don't hate, this table's actually useful -->
+				<tr>
+					<td id="about">
+
+						<h3>About PPCUG</h3>
+
+						<ul>
+							<li><a href="#">Board Officers, SIG Leaders</a></li>
+							<li><a href="#">Bylaws</a></li>
+							<li><a href="#">Operations Manager</a></li>
+							<li><a href="#">Articles of Incorporation</a></li>
+							<li><a href="#">History</a></li>
+							<li><a href="#">Resources</a></li>
+						</ul>
+
+					</td>
+
+					<td class="divider"></td>
+
+					<td id="thanks">
+
+						<div class="group">
+
+							<h3>PPCUG would like to thank:</h3>
+
+							<a href="http://www.oregonoutreach.org" class="icon" target="_blank">
+								<img src="../img/icon_oregon-outreach.png" alt="Oregon Outreach" />
+								<p>Oregon<br/>
+								Outreach</p>
+							</a>
+
+							<a href="http://www.iinet.com" class="icon" target="_blank">
+								<img src="../img/icon_infinity-internet.png" alt="Infinity Internet" />
+								<p>Infinity<br/>
+								Internet</p>
+							</a>
+
+						</div>
+
+						<div class="group">
+
+							<h3>PPCUG is associated with:</h3>
+
+							<a href="http://www.apcug.net" class="icon" target="_blank">
+								<img src="../img/icon_apcug.png" alt="APCUG" />
+								<p>APCUG</p>
+							</a>
+
+						</div>
+
+					</td>
+
+					<td class="divider"></td>
+
+					<td id="location">
+
+						<a href="http://goo.gl/q90ti" target="_blank">
+							<img class="map" src="../img/map.jpg" alt="map" />
+						</a>
+
+						<h3>Location</h3>
+
+						<address>
+							Portland PC Users Group<br/>
+							PMB 121, 950 Lloyd Center<br/>
+							Portland, Oregon 97232-1260
+						</address>
+
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<!-- FOOTER NAV -->
+
+		<div id="footer_nav">
+			<a href="index.html">Home</a> | <a href="#">SIGS</a> |
+			<a href="#">Contact</a> | <a href="#">PC-Grapevine</a> |
+			<a href="#">Sitemap</a>
+		</div>
+
+		<!-- COPYRIGHT -->
+
+		<div id="copyright">
+			<p>Copyright &copy;2011 Portland PC Users Group - All Rights Reserved</p>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('button.renew').click(function(event){
+				event.preventDefault();
+			});
+		});
+	</script>
+</body>
+</html>
