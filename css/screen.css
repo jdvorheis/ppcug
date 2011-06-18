@@ -374,28 +374,3 @@ html,body {
 		}
 	.member #login input[type=submit] { float: left; }
 	.member #login button.renew { float: right; }
-	
-
-/*
-VIOLENTLY STRONG SUGGESTION: for member content styling, if a member.css conditional stylesheet is not an option, just add a .member class to the container:
-
-	<div id="container" class="member">
-
- All public content can just be default without a specific identifier -- a .member prefix will override the default. So you could style a member element like so:
- 
-	.member #content { property: value; }
-
-kthx
--nate
-*/
-
-/*
-I completely agree with the .members being added to a new #container. I think we agreed it would be easier just to point to one css file. So I created a new #container with .member as a class. 
-
-I updated the following:
-	* Added target="_blank" to the links in the footer on both the home and members templates. 
-	* Added new CSS for the member area.
-	* Create an index.html page for members home page. 
-	
--jd
-*/
