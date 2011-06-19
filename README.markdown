@@ -56,3 +56,5 @@ Updates:
 *		Updates the sigs image, there were a few that were off by 1px in the hover state in the image not the css. Css was good. 
 *		The #contentBody is not expanding... min-height is set to 400px but it does not grow... what am I missing?
 *		Updated the main bg.png - it had a little bit of a white border
+
+-jd
