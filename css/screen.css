@@ -33,7 +33,7 @@ html,body {
 		}
 		
 			#logo {
-				background: transparent url(../img/logo.png) bottom left no-repeat;
+				background: transparent url(../img/logo.png) top left no-repeat;
 				height: 118px;
 				left: 15px;
 				position: absolute;
@@ -42,7 +42,7 @@ html,body {
 				width: 303px;
 			}
 			#logo:hover {
-				background: transparent url(../img/logo.png) top left no-repeat;
+				background: transparent url(../img/logo.png) bottom left no-repeat;
 				cursor: pointer;
 			}
 		
@@ -155,10 +155,28 @@ html,body {
 			min-height: 420px;
 			overflow: hidden;
 		}
+		
+		#contentBody {
+			background-color:#eeedea;
+			min-height:400px;
+			/* Not expanding... wtf? */
+		} 
+			
+			#contentBody h3 {
+			color: #283353;
+			font-size: 13px;
+			padding: 25px 9px 0 13px;
+			}
+		
 			#content {
 				margin: 15px;
 			}
-				#content h2 {
+			
+			#contentSig {
+				margin: 15px 0 15px 15px; 
+			}
+			
+				#content h2, #contentSig h2 {
 					background: #283353;
 					color: #fff;
 					font-size: 21px;
@@ -175,6 +193,14 @@ html,body {
 					padding: 25px 15px 15px;
 					width: 300px;
 				}
+				
+				#contentSig p {
+					float: left;
+					font-size: 13px;
+					padding: 25px 15px 15px;
+					width: 280px;
+				}
+				
 
 /* footer defaults */
 
@@ -182,7 +208,7 @@ html,body {
 			color: #fff;
 			background: #6C9889;
 			font-size: 12px;
-			min-height: 100px;
+			min-height: 190px;
 			overflow: hidden;
 		}
 			#footer table { width: 100%; }
@@ -199,7 +225,7 @@ html,body {
 			#footer td.divider {
 				background: transparent url(../img/divider.png) 6px 15px no-repeat;
 				height: 172px;
-				padding: 10px 15px;
+				padding: 10px 8px;
 				width: 3px;
 			}
 
@@ -208,6 +234,8 @@ html,body {
 	As I recall, most if not all of these were in the members section only.
 	Might want to reconsider their placement in the current build.
 	-nate
+	
+	-jd's note: I removed this from the public template.
 	
 */
 
@@ -360,17 +388,60 @@ html,body {
 		margin: 0 auto;
 	}	
 	
+	.member #content {
+		float: right;
+		width: 630px;
+	}
+	
+	.member #contentSig {
+		float: left;
+		width:  280px;
+	}
+	
 	.member #login {
 		text-align: left;
 	}
+	
 	.member #login .logged-in {
 		text-align:left;
 		padding:10px 0 15px 0;
 		font-size:12px;
 		color:#FFF;
 	}
+	
 		.member #login .username {
 			color:#e79540;
 		}
+		
 	.member #login input[type=submit] { float: left; }
 	.member #login button.renew { float: right; }
+	
+	/* SIGS Sprite */
+	/* If there is a better way to do this please let me know! */
+
+	#SIGS_buttons {margin-top:10px;width:252px;height:252px;background:#eeedea;padding-left:10px; padding-top:10px}
+  
+	#SIGS_buttons ul {list-style-type: none;}
+	#SIGS_buttons li {float:left;}
+	#SIGS_buttons li a {display:block; background:url(../img/sig_sprites.png) no-repeat;height:64px;width:64px;text-indent:-200em; text-decoration:none; margin-right:20px; margin-bottom:20px;}
+	  
+	#SIGS_buttons .pda_sig a {width:64px;background-position:-64px -320px;}
+	#SIGS_buttons .pda_sig a:hover {background-position:0 -320px;}
+	 
+	#SIGS_buttons .aud_vis_sig a {width:64px;background-position:-64px -128px;}
+	#SIGS_buttons .aud_vis_sig a:hover {background-position:0 -128px;}
+	  
+	#SIGS_buttons .investing_sig a {width:64px;background-position:-64px 0;}
+	#SIGS_buttons .investing_sig a:hover {background-position:0 0;}
+		  
+	#SIGS_buttons .hardware_sig a {width:64px;background-position:-64px -192px;}
+	#SIGS_buttons .hardware_sig a:hover {background-position:0 -192px}
+
+	#SIGS_buttons .linux_sig a {width:64px;background-position:-64px -256px;}
+	#SIGS_buttons .linux_sig a:hover {background-position:0 -256px;}
+	 
+	#SIGS_buttons .wildcard_sig a {width:64px;background-position:-64px -64px;}
+	#SIGS_buttons .wildcard_sig a:hover {background-position:0 -64px;}
+	  
+	#SIGS_buttons .polug_sig a {width:64px;background-position:-64px -384px;}
+	#SIGS_buttons .polug_sig a:hover {background-position:0 -384px;}

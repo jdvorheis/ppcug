@@ -41,3 +41,18 @@ Updates:
 *		Created a github repo so we can more easily track updates and changes
 
 -nate
+
+### Sun 6/19/2011
+Updates:
+
+*		Changed the logo back to white witha  rollover of orange
+*		Removed PC-Grapevince from public
+*		Removed the about PPCUG from public and moved the thanks column info over
+*		Resized the footer to have a min-height of 190px to give a little more breathing room
+*		Removed PC-Grapevine from the footer nav
+*		Changed the left right padding of #footer td.divider to 8px
+*		Added Sigs area in member section
+*		Added contentBody for copy area in members section, NOTE: We should use this in the public area too. Not on the home page though. 
+*		Updates the sigs image, there were a few that were off by 1px in the hover state in the image not the css. Css was good. 
+*		The #contentBody is not expanding... min-height is set to 400px but it does not grow... what am I missing?
+*		Updated the main bg.png - it had a little bit of a white border
