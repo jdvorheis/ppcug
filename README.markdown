@@ -58,3 +58,10 @@ Updates:
 *		Updated the main bg.png - it had a little bit of a white border
 
 -jd
+
+### Sun 6/20/2011
+Updates:
+
+*		Added the member sig pages. Still need to update urls and such in those pages. 
+
+-jd
