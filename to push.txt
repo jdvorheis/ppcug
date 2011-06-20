@@ -1,0 +1,5 @@
+push just sends your saves to github
+do this:
+git add .
+git commit -m 'jd committin'
+git push origin master

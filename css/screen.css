@@ -442,6 +442,7 @@ html,body {
 	 
 	#SIGS_buttons .wildcard_sig a {width:64px;background-position:-64px -64px;}
 	#SIGS_buttons .wildcard_sig a:hover {background-position:0 -64px;}
-	  
+	
 	#SIGS_buttons .polug_sig a {width:64px;background-position:-64px -384px;}
 	#SIGS_buttons .polug_sig a:hover {background-position:0 -384px;}
+	
