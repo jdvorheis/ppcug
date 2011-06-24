@@ -65,3 +65,13 @@ Updates:
 *		Added the member sig pages. Still need to update urls and such in those pages. 
 
 -jd
+
+### Thursday 6/23/2011
+Updates:
+
+*		Created all the SIG page templates
+*		Created the SIG, Contact and PC-Grapevine page templates
+*		Updated SIGS_buttons to sigs_buttons in the screen.css
+*		Trying to set a selected state to sigs sidebar and having trouble. Need your help.
+
+-jd

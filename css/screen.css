@@ -423,30 +423,30 @@ html,body {
 	/* SIGS Sprite */
 	/* If there is a better way to do this please let me know! */
 
-	#SIGS_buttons {margin-top:10px;width:252px;height:252px;background:#eeedea;padding-left:10px; padding-top:10px}
+	#sigs_buttons {margin-top:10px;width:252px;height:252px;background:#eeedea;padding-left:10px; padding-top:10px}
   
-	#SIGS_buttons ul {list-style-type: none;}
-	#SIGS_buttons li {float:left;}
-	#SIGS_buttons li a {display:block; background:url(../img/sig_sprites.png) no-repeat;height:64px;width:64px;text-indent:-200em; text-decoration:none; margin-right:20px; margin-bottom:20px;}
+	#sigs_buttons ul {list-style-type: none;}
+	#sigs_buttons li {float:left;}
+	#sigs_buttons li a {display:block; background:url(../img/sig_sprites.png) no-repeat;height:64px;width:64px;text-indent:-200em; text-decoration:none; margin-right:20px; margin-bottom:20px;}
 	  
-	#SIGS_buttons .pda_sig a {width:64px;background-position:-64px -320px;}
-	#SIGS_buttons .pda_sig a:hover {background-position:0 -320px;}
+	#sigs_buttons .pda_sig a {width:64px;background-position:-64px -320px;}
+	#sigs_buttons .pda_sig a:hover {background-position:0 -320px;}
 	 
-	#SIGS_buttons .aud_vis_sig a {width:64px;background-position:-64px -128px;}
-	#SIGS_buttons .aud_vis_sig a:hover {background-position:0 -128px;}
+	#sigs_buttons .aud_vis_sig a {width:64px;background-position:-64px -128px;}
+	#sigs_buttons .aud_vis_sig a:hover {background-position:0 -128px;}
 	  
-	#SIGS_buttons .investing_sig a {width:64px;background-position:-64px 0;}
-	#SIGS_buttons .investing_sig a:hover {background-position:0 0;}
+	#sigs_buttons .investing_sig a {width:64px;background-position:-64px 0;}
+	#sigs_buttons .investing_sig a:hover {background-position:0 0;}
 		  
-	#SIGS_buttons .hardware_sig a {width:64px;background-position:-64px -192px;}
-	#SIGS_buttons .hardware_sig a:hover {background-position:0 -192px}
+	#sigs_buttons .hardware_sig a {width:64px;background-position:-64px -192px;}
+	#sigs_buttons .hardware_sig a:hover {background-position:0 -192px}
 
-	#SIGS_buttons .linux_sig a {width:64px;background-position:-64px -256px;}
-	#SIGS_buttons .linux_sig a:hover {background-position:0 -256px;}
+	#sigs_buttons .linux_sig a {width:64px;background-position:-64px -256px;}
+	#sigs_buttons .linux_sig a:hover {background-position:0 -256px;}
 	 
-	#SIGS_buttons .wildcard_sig a {width:64px;background-position:-64px -64px;}
-	#SIGS_buttons .wildcard_sig a:hover {background-position:0 -64px;}
+	#sigs_buttons .wildcard_sig a {width:64px;background-position:-64px -64px;}
+	#sigs_buttons .wildcard_sig a:hover {background-position:0 -64px;}
 	
-	#SIGS_buttons .polug_sig a {width:64px;background-position:-64px -384px;}
-	#SIGS_buttons .polug_sig a:hover {background-position:0 -384px;}
+	#sigs_buttons .polug_sig a {width:64px;background-position:-64px -384px;}
+	#sigs_buttons .polug_sig a:hover {background-position:0 -384px;}
 	
